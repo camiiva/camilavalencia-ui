@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "../src/styles/tokens.css";
+
+html,
+body {
+  background-color: #071e21;
+  color: #ffffff;
+  font-family: var(--font-ibm-plex-sans), sans-serif;
+}
