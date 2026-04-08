@@ -1,0 +1,49 @@
+{
+  "name": "@camilavalencia/ui",
+  "version": "0.1.0",
+  "description": "Personal design system — React components with Tailwind v4 tokens",
+  "license": "MIT",
+  "author": "Camila Valencia",
+  "sideEffects": ["**/*.css"],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles": "./dist/styles/tokens.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "postbuild": "mkdir -p dist/styles && cp src/styles/tokens.css dist/styles/tokens.css",
+    "dev": "tsup --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "typecheck": "tsc --noEmit",
+    "release": "changeset publish"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "tailwindcss": ">=4"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2",
+    "@storybook/addon-essentials": "^8",
+    "@storybook/react": "^8",
+    "@storybook/react-vite": "^8",
+    "@tailwindcss/vite": "^4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "react": "^19",
+    "react-dom": "^19",
+    "storybook": "^8",
+    "tsup": "^8",
+    "typescript": "^5",
+    "vite": "^6"
+  }
+}
