@@ -53,7 +53,7 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
   return (
     <nav
       aria-label="Table of contents"
-      className={`hidden xl:block sticky top-28 h-fit w-[360px] shrink-0 transition-opacity duration-slow ${
+      className={`sticky top-28 h-fit w-[360px] shrink-0 transition-opacity duration-slow ${
         mounted ? "opacity-100" : "opacity-0"
       }`}
     >

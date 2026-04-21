@@ -4,7 +4,9 @@
   "description": "Personal design system — React components with Tailwind v4 tokens",
   "license": "MIT",
   "author": "Camila Valencia",
-  "sideEffects": ["**/*.css"],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "type": "module",
   "exports": {
     ".": {
@@ -34,14 +36,14 @@
   "devDependencies": {
     "@changesets/cli": "^2",
     "@storybook/addon-essentials": "^8",
-    "@storybook/react": "^8",
-    "@storybook/react-vite": "^8",
+    "@storybook/react": "^10.3.5",
+    "@storybook/react-vite": "^10.3.5",
     "@tailwindcss/vite": "^4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "react": "^19",
     "react-dom": "^19",
-    "storybook": "^8",
+    "storybook": "^10.3.5",
     "tsup": "^8",
     "typescript": "^5",
     "vite": "^6"
